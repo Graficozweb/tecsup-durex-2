@@ -1,0 +1,73 @@
+#contenedor {
+	background-color: #FFFFFF;
+	margin: auto;
+	height: 850px;
+	width: 900px;
+}
+#inferior {
+	background-color: #FFFFFF;
+	margin: auto;
+	height: 700px;
+	width: 900px;
+}
+#izquierda {
+	background-color: #FFFFFF;
+	float: left;
+	height: 470px;
+	width: 185px;
+	margin-top: 126px;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+}
+#derecha {
+	height: 700px;
+	width: 900px;
+	float: right;
+	margin: auto;
+}
+
+
+#superior {
+	background-color: #FFFFFF;
+	margin: auto;
+	height: 110px;
+	width: 900px;
+}
+.menu {
+	font-family: "Comic Sans MS", "Century Gothic", "Century Schoolbook";
+	font-size: 14px;
+	line-height: normal;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-transform: capitalize;
+	color: #FFFFFF;
+	text-align: center;
+	font-style: normal;
+}
+#medio {
+	background-color: #4E71C3;
+	margin: auto;
+	height: 35px;
+	width: 900px;
+}
+.fuente {
+	font-family: Calibri;
+	font-size: 13px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-align: justify;
+	color: #4E71C3;
+	letter-spacing: normal;
+	vertical-align: middle;
+	word-spacing: normal;
+	white-space: normal;
+}
+.estilo {
+	font-family: Calibri;
+	font-style: normal;
+	color: #000000;
+}
+S
