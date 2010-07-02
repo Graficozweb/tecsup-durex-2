@@ -1,14 +1,14 @@
 package mantenimiento.servlet.equipo.partes;
 
 import java.io.IOException;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import mantenimiento.dao.Equipo_partesDAO;
+import mantenimiento.dao.ParteDAO;
 import mantenimiento.excepcion.DAOExcepcion;
-import mantenimiento.modelo.Equipo_partes;
+import mantenimiento.modelo.Parte;
+
 
 
 /**
@@ -37,13 +37,13 @@ public class PartesEditarServlet extends javax.servlet.http.HttpServlet
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		Equipo_partesDAO dao = new Equipo_partesDAO();
-		int id = Integer.parseInt(request.getParameter("idEquipo_partes"));
-		Equipo_partes vo;
+		ParteDAO dao = new ParteDAO();
+		int id = Integer.parseInt(request.getParameter("idParte"));
+		Parte vo;
 		try {
-			vo = dao.obtener(id);
-			request.setAttribute("Equipo_partes", vo);
-			request.getRequestDispatcher("/Equipo_partesEditar.jsp").forward(
+			vo = dao.obtenerPartePorId(id);
+			request.setAttribute("Parte", vo);
+			request.getRequestDispatcher("/ParteEditar.jsp").forward(
 					request, response);
 		} catch (DAOExcepcion e) {
 			System.err.println("Error");
