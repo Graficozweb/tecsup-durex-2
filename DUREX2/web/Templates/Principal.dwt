@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Software de Mantenimiento</title>
+<!-- TemplateEndEditable -->
+<link href="../estilos/principal.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+body {
+	background-color: #99CCFF;
+}
+body,td,th {
+	color: #FBFBFD;
+}
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+-->
+</style>
+<!-- TemplateBeginEditable name="head" --><!-- TemplateEndEditable -->
+<script src="../SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<link href="../SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css" />
+<link href="../SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+<!--
+.Estilo5 {
+	font-family: "Comic Sans MS", "Century Gothic", "Century Schoolbook";
+	font-weight: bold;
+	font-size: 14px;
+}
+.Estilo8 {font-size: 14px}
+-->
+</style>
+<link href="../Estilos/principal.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body bgcolor="#99CCFF">
+<div id="contenedor">
+  <div id="superior">
+    <div align="center"><img src="../imagenes/TECSUP_p_small.jpg" width="746" height="108" />  </div>
+  </div>
+  <div id="medio" align="center">  
+    <ul id="MenuBar1" class="MenuBarHorizontal">
+       <li> <a  href="../inicio.html"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="Estilo5"> Inicio </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a> </li>
+      <li> <a class="MenuBarItemSubmenu" href="#"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="Estilo5"> Inventario </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a>
+          <ul>
+            <li><a href="../equipo.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Estilo5"> Equipos </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </a></li>
+            <li><a href="../herramienta.html">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="Estilo5">Herramientas</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a></li>
+          </ul>
+      </li>
+      <li>
+    <a class="MenuBarItemSubmenu" href="#">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="Estilo5"> Mantenimiento </span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    </a>
+    <ul>
+                      <li><a href="../cronoacti2.html"><span class="Estilo5">Cronograma de Actividades</span>&nbsp;</a>
+                      <li><a href="../O.P.html"><span class="Estilo5">Operaciones Programadas</span>&nbsp;</a>
+                      <li><a href="../O.T.html"><span class="Estilo5">&Oacute;rdenes de Trabajo</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>                   
+        </ul>
+      </li>
+	<li>
+    <a href="../Menu_reportes.html" >
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="Estilo5"> Reportes </span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    </a>    </li>
+    <li>
+    <a href="../usuarios.html">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span class="Estilo5"> Usuarios </span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    </a>    </li>
+
+    </ul>
+  </div>
+  <div id="inferior">
+    <div id="derecha">
+      <div align="center"><!-- TemplateBeginEditable name="derecha" -->
+        <div align="center">
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p><img src="../imagenes/mantenimiento.jpg" alt="" width="250" height="250" /></p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+          <p>&nbsp;</p>
+        </div>
+      <!-- TemplateEndEditable --></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgDown:"../SpryAssets/SpryMenuBarDownHover.gif", imgRight:"../SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+</script>
+</body>
+</html>
