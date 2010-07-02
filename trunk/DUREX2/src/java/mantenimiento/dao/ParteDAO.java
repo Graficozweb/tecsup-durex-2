@@ -27,7 +27,7 @@ public class ParteDAO extends BaseDAO {
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
 		try {
-			String query = "select * from Equipo_partess where idequipo_partes=?";
+			String query = "select * from partes where idequipo=?";
 			con = ConexionBD.obtenerConexion();
 			stmt = con.prepareStatement(query);
 			stmt.setInt(1, idEquipo_partes);
@@ -54,7 +54,7 @@ public class ParteDAO extends BaseDAO {
 	public Collection<Parte> buscarPorNombre(String nombre)
 			throws DAOExcepcion {
 //		String query = "select Parte.*,grupo.nombre as ngrupo from Parte,grupo where Parte.nombre like ? and grupo.idgrupo=Parte.idgrupo";
-		String query = "select Parte.*,equipo.nombre as nequipo from Parte,equipo where Parte.nombre like ? and equipo.idequipo=Parte.idequipo";
+		String query = "select partes.*,equipo.nombre as nequipo from partes,equipo where partes.nombre like ? and equipo.idequipo=partes.idequipo";
 		Collection<Parte> c = new ArrayList<Parte>();
 		Connection con = null;
 		PreparedStatement stmt = null;
@@ -85,7 +85,7 @@ public class ParteDAO extends BaseDAO {
 	}
 
 	public Parte insertar(Parte vo) throws DAOExcepcion {
-		String query = "INSERT INTO Parte(idequipo,nombre,descripcion) VALUES (?,?,?)";
+		String query = "INSERT INTO partes(idequipo,nombre,descripcion) VALUES (?,?,?)";
 		Connection con = null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
@@ -120,7 +120,7 @@ public class ParteDAO extends BaseDAO {
 	}
 
 	public void eliminar(int idparte) throws DAOExcepcion {
-		String query = "DELETE FROM Parte WHERE idparte=?";
+		String query = "DELETE FROM partes WHERE idparte=?";
 		Connection con = null;
 		PreparedStatement stmt = null;
 		try {
@@ -141,7 +141,7 @@ public class ParteDAO extends BaseDAO {
 	}
 
 	public Parte actualizar(Parte vo) throws DAOExcepcion {
-		String query = "update Parte set nombre=?,descripcion=?,idequipo=? where idparte=?";
+		String query = "update partes set nombre=?,descripcion=?,idequipo=? where idparte=?";
 		Connection con = null;
 		PreparedStatement stmt = null;
 		try {

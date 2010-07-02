@@ -48,7 +48,6 @@ import mantenimiento.modelo.Parte;
 		vo.setNombre(request.getParameter("nombre"));
 		vo.setDescripcion(request.getParameter("descripcion"));
 		
-		
 		ParteDAO dao= new ParteDAO();
 		try {
 			dao.actualizar(vo);
