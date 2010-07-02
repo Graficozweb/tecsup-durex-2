@@ -237,28 +237,28 @@
         <url-pattern>/HistoriaBusquedaServlet</url-pattern>
     </servlet-mapping>
      <servlet-mapping>
-        <servlet-name>ActualizarServlet</servlet-name>
-        <url-pattern>/ActualizarServlet</url-pattern>
+        <servlet-name>PartesActualizarServlet</servlet-name>
+        <url-pattern>/PartesActualizarServlet</url-pattern>
     </servlet-mapping>
      <servlet-mapping>
-        <servlet-name>BuscarServlet</servlet-name>
-        <url-pattern>/BuscarServlet</url-pattern>
+        <servlet-name>PartesBuscarServlet</servlet-name>
+        <url-pattern>/PartesBuscarServlet</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
-        <servlet-name>EditarServlet</servlet-name>
-        <url-pattern>/EditarServlet</url-pattern>
+        <servlet-name>PartesEditarServlet</servlet-name>
+        <url-pattern>/PartesEditarServlet</url-pattern>
     </servlet-mapping>
          <servlet-mapping>
-        <servlet-name>EliminarServlet</servlet-name>
-        <url-pattern>/EliminarServlet</url-pattern>
+        <servlet-name>PartesEliminarServlet</servlet-name>
+        <url-pattern>/PartesEliminarServlet</url-pattern>
     </servlet-mapping>
          <servlet-mapping>
-        <servlet-name>InsertarServlet</servlet-name>
-        <url-pattern>/InsertarServlet</url-pattern>
+        <servlet-name>PartesInsertarServlet</servlet-name>
+        <url-pattern>/PartesInsertarServlet</url-pattern>
     </servlet-mapping>
          <servlet-mapping>
-        <servlet-name>NuevoServlet</servlet-name>
-        <url-pattern>/NuevoServlet</url-pattern>
+        <servlet-name>PartesNuevoServlet</servlet-name>
+        <url-pattern>/PartesNuevoServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
