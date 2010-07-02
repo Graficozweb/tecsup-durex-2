@@ -108,6 +108,30 @@
         <servlet-name>HistoriaBusquedaServlet</servlet-name>
         <servlet-class>mantenimiento.servlet.historias.HistoriaBusquedaServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>PartesActualizarServlet</servlet-name>
+        <servlet-class>mantenimiento.servlet.equipo.partes.PartesActualizarServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PartesBuscarServlet</servlet-name>
+        <servlet-class>mantenimiento.servlet.equipo.partes.PartesBuscarServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PartesEditarServlet</servlet-name>
+        <servlet-class>mantenimiento.servlet.equipo.partes.PartesEditarServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PartesEliminarServlet</servlet-name>
+        <servlet-class>mantenimiento.servlet.equipo.partes.PartesEliminiarServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PartesInsertarServlet</servlet-name>
+        <servlet-class>mantenimiento.servlet.equipo.partes.PartesInsertarServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>PartesNuevoServlet</servlet-name>
+        <servlet-class>mantenimiento.servlet.equipo.partes.PartesNuevoServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
@@ -211,6 +235,30 @@
     <servlet-mapping>
         <servlet-name>HistoriaBusquedaServlet</servlet-name>
         <url-pattern>/HistoriaBusquedaServlet</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>ActualizarServlet</servlet-name>
+        <url-pattern>/ActualizarServlet</url-pattern>
+    </servlet-mapping>
+     <servlet-mapping>
+        <servlet-name>BuscarServlet</servlet-name>
+        <url-pattern>/BuscarServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EditarServlet</servlet-name>
+        <url-pattern>/EditarServlet</url-pattern>
+    </servlet-mapping>
+         <servlet-mapping>
+        <servlet-name>EliminarServlet</servlet-name>
+        <url-pattern>/EliminarServlet</url-pattern>
+    </servlet-mapping>
+         <servlet-mapping>
+        <servlet-name>InsertarServlet</servlet-name>
+        <url-pattern>/InsertarServlet</url-pattern>
+    </servlet-mapping>
+         <servlet-mapping>
+        <servlet-name>NuevoServlet</servlet-name>
+        <url-pattern>/NuevoServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
