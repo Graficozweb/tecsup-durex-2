@@ -5,9 +5,9 @@ import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import mantenimiento.dao.Equipo_partesDAO;
+import mantenimiento.dao.ParteDAO;
 import mantenimiento.excepcion.DAOExcepcion;
-import mantenimiento.modelo.Equipo_partes;
+import mantenimiento.modelo.Parte;
 
 public class PartesInsertarServlet extends javax.servlet.http.HttpServlet
         implements javax.servlet.Servlet {
@@ -33,9 +33,9 @@ public class PartesInsertarServlet extends javax.servlet.http.HttpServlet
         String nombre = "";
         String descripcion = "";
 
-        Equipo_partesDAO dao = new Equipo_partesDAO();
-        Equipo_partes vo = new Equipo_partes();
-        vo.setNom_equipo(equipo);
+        ParteDAO dao = new ParteDAO();
+        Parte vo = new Parte();
+        vo.setNombreequipo(equipo);
         vo.setNombre(nombre);
         vo.setDescripcion(descripcion);
                 try {

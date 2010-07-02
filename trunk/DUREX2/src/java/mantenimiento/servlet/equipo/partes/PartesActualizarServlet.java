@@ -2,14 +2,15 @@ package mantenimiento.servlet.equipo.partes;
 
 
 import java.io.IOException;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import mantenimiento.dao.Equipo_partesDAO;
+import mantenimiento.dao.ParteDAO;
 import mantenimiento.excepcion.DAOExcepcion;
-import mantenimiento.modelo.Equipo_partes;
+import mantenimiento.modelo.Parte;
+
+
 
 
 /**
@@ -38,20 +39,20 @@ import mantenimiento.modelo.Equipo_partes;
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		System.out.println("Equipo_partesActualizarServlet: inicio");
-		Equipo_partes vo = new Equipo_partes();
+		System.out.println("ParteActualizarServlet: inicio");
+		Parte vo = new Parte();
 		int id=Integer.parseInt(request.getParameter("categoria"));
 		vo.setIdparte(id);
-		int idp=Integer.parseInt(request.getParameter("idEquipo_partes"));
+		int idp=Integer.parseInt(request.getParameter("idParte"));
 		vo.setIdparte(idp);
 		vo.setNombre(request.getParameter("nombre"));
 		vo.setDescripcion(request.getParameter("descripcion"));
 		
 		
-		Equipo_partesDAO dao= new Equipo_partesDAO();
+		ParteDAO dao= new ParteDAO();
 		try {
 			dao.actualizar(vo);
-			request.getRequestDispatcher("/Equipo_partesBuscar.jsp").forward(request, response);
+			request.getRequestDispatcher("/ParteBuscar.jsp").forward(request, response);
 		} catch (DAOExcepcion e) {
 			System.err.println("Error");
 			RequestDispatcher rd = request.getRequestDispatcher("/error.jsp");
