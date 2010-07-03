@@ -36,7 +36,7 @@
     <td>&nbsp;</td>
   </tr>
 </form>
-<table class="subtitulo" width="1021" border="0" bordercolor="#999999" align="center" bgcolor="#ffffff">
+<table class="subtitulo" width="960" border="0" bordercolor="#999999" align="center" bgcolor="#ffffff">
     <tr bgcolor="#0099FF" class="titulo">
     <td width="18"><div align="center" style="font-family: Calibri; font-size: 16px"><strong>N&ordm;</strong></div></td>
     <td width="164"><div align="center" style="font-family: Calibri; font-size: 16px"><strong>Id User</strong></div></td>
@@ -63,12 +63,12 @@
                   %>
   <tr <%=x %>>
     <td><div align="center" style="font-family: Calibri; font-size: 12pt"><%=a %></div></td>
-    <td><span style="font-family: Calibri; font-size: 12pt"><%= Historias.getUsuario() %></span></td>
-    <td><span style="font-family: Calibri; font-size: 12pt"><%= Historias.getAccion() %></span></td>
-    <td><span style="font-family: Calibri; font-size: 12pt"><%= Historias.getObjeto() %></span></td>
-    <td><span style="font-family: Calibri; font-size: 12pt"><%= Historias.getNom_objeto() %></span></td>
-    <td><div align="center" style="font-family: Calibri; font-size: 12pt"><%= Historias.getFecha() %></div></td>
-    <td><div align="center" style="font-family: Calibri; font-size: 12pt"><%= Historias.getHora() %></div></td>
+    <td><%= Historias.getUsuario() %></td>
+    <td><%= Historias.getAccion() %></td>
+    <td><%= Historias.getObjeto() %></td>
+    <td><%= Historias.getNom_objeto() %></td>
+    <td><%= Historias.getFecha() %></td>
+    <td><%= Historias.getHora() %></td>
    </tr>
 <%
         a++;
