@@ -36,15 +36,15 @@
     <td>&nbsp;</td>
   </tr>
 </form>
-<table class="subtitulo" width="960" border="0" bordercolor="#999999" align="center" bgcolor="#ffffff">
+<table class="subtitulo" width="1021" border="0" bordercolor="#999999" align="center" bgcolor="#ffffff">
     <tr bgcolor="#0099FF" class="titulo">
-    <td width="20"><div align="center"><strong>Nº</strong></div></td>
-    <td width="120"><div align="center"><strong>Id User</strong></div></td>
-    <td width="170"><div align="center"><strong>Accion</strong></div></td>
-    <td width="170"><div align="center"><strong>Objeto</strong></div></td>
-    <td width="180"><div align="center"><strong>Nombre Obj.</strong></div></td>
-    <td width="180"><div align="center"><strong>Fecha</strong></div></td>
-    <td width="120"><div align="center"><strong>Hora</strong></div></td>
+    <td width="18"><div align="center" style="font-family: Calibri; font-size: 16px"><strong>N&ordm;</strong></div></td>
+    <td width="164"><div align="center" style="font-family: Calibri; font-size: 16px"><strong>Id User</strong></div></td>
+    <td width="158"><div align="center" style="font-family: Calibri; font-size: 16px"><strong>Acci&oacute;n</strong></div></td>
+    <td width="159"><div align="center" style="font-family: Calibri; font-size: 16px"><strong>Objeto</strong></div></td>
+    <td width="187"><div align="center" style="font-family: Calibri; font-size: 16px"><strong>Nombre Obj.</strong></div></td>
+    <td width="155"><div align="center" style="font-family: Calibri; font-size: 16px"><strong>Fecha</strong></div></td>
+    <td width="150"><div align="center" style="font-family: Calibri; font-size: 16px"><strong>Hora</strong></div></td>
   </tr>
   <%@page import="java.util.*,mantenimiento.modelo.Historias" %>
    <%String status;%>
@@ -62,13 +62,13 @@
                   }
                   %>
   <tr <%=x %>>
-    <td><div align="center"><%=a %></div></td>
-    <td><%= Historias.getUsuario() %></td>
-    <td><%= Historias.getAccion() %></td>
-    <td><%= Historias.getObjeto() %></td>
-    <td><%= Historias.getNom_objeto() %></td>
-    <td><div align="center"><%= Historias.getFecha() %></div></td>
-    <td><div align="center"><%= Historias.getHora() %></div></td>
+    <td><div align="center" style="font-family: Calibri; font-size: 12pt"><%=a %></div></td>
+    <td><span style="font-family: Calibri; font-size: 12pt"><%= Historias.getUsuario() %></span></td>
+    <td><span style="font-family: Calibri; font-size: 12pt"><%= Historias.getAccion() %></span></td>
+    <td><span style="font-family: Calibri; font-size: 12pt"><%= Historias.getObjeto() %></span></td>
+    <td><span style="font-family: Calibri; font-size: 12pt"><%= Historias.getNom_objeto() %></span></td>
+    <td><div align="center" style="font-family: Calibri; font-size: 12pt"><%= Historias.getFecha() %></div></td>
+    <td><div align="center" style="font-family: Calibri; font-size: 12pt"><%= Historias.getHora() %></div></td>
    </tr>
 <%
         a++;
