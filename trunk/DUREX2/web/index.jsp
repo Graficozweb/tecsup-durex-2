@@ -38,6 +38,11 @@ Clave: <input type="password" name="clave"/> <br/>
                 font-weight: bold;
                 color: #666666;
             }
+.Estilo1 {
+	font-family: Calibri;
+	font-weight: bold;
+	font-size: 18px;
+}
             -->
         </style>
         <title>Log In</title>
@@ -50,9 +55,9 @@ Clave: <input type="password" name="clave"/> <br/>
             <br><br><br><br>
             <table cellpadding="0" cellspacing="0" width="700px" class="grilla" align="center" border="0"  bgcolor="#048BBB">
                 <tr>
-                    <td colspan="4" style="color:#FFFFFF"><div align="center"><b>SOFTWARE DE MANTENIMIENTO</b></div></td>
+                    <td colspan="4" style="color:#FFFFFF"><div align="center" class="Estilo1">SOFTWARE DE MANTENIMIENTO</div></td>
 
-                </tr>
+              </tr>
             </table>
             <table cellpadding="0" cellspacing="0" border="0"  align="center" bgcolor="#FFFFFF" >
                 <tr>
@@ -61,9 +66,9 @@ Clave: <input type="password" name="clave"/> <br/>
                         <table class="tabla" height="255px" width="300" border="0">
                             <tr>
                                 <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
+                                <td width="26%">&nbsp;</td>
+                              <td width="52%">&nbsp;</td>
+                          </tr>
                             <tr>
                                 <td colspan="3" align=center><b>&nbsp;</b></td>
                             </tr>
@@ -73,27 +78,28 @@ Clave: <input type="password" name="clave"/> <br/>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr height="10%">
-                                <td width="25%">&nbsp; </td>
-                                <td class="subtitulo" style="color: #048BBB;">Usuario :</td>
+                                <td width="22%">&nbsp; </td>
+                              <td class="subtitulo" style="color: #048BBB;">Usuario :</td>
                                 <td>
                                     <input type="text" name="usuario"/>
                                 </td>
                             </tr>
                             <tr height="10%">
                                 <td>&nbsp;</td>
-                                <td class="subtitulo" style="color: #048BBB;">Clave :</td>
-                                <td>
+                                <td class="subtitulo" style="color: #048BBB;">Clave&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</td>
+<td>
                                     <input type="password" name="clave"/>
                                 </td>
                             </tr>
                             <tr>
                                 <td>&nbsp;</td>
                                 <td>&nbsp;</td>
-                                <td><input  type="submit" value="Ingresar">
+                                <td><div align="center">
+                                  <input  type="submit" value="Ingresar">
 
                                     &nbsp;
 
-                                </td>
+                                </div></td>
                             </tr>
                             <tr>                             
                                 <td>&nbsp;</td>

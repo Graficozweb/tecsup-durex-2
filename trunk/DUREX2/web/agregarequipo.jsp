@@ -74,7 +74,7 @@
       </tr>
         <tr>
           <td colspan="15" align="center"><div align="left" style="font-style: italic; font-size: 14px; font-family: Calibri; font-weight: bold">*Campos Obligatorios</div></td>
-        </tr>
+      </tr>
         <tr>
             <td colspan="2" align="center"><img src="Imagenes/volver_icono.jpg" alt="iconos" width="32" height="29" /><input name="btnretornar" type="button" value="Regresar" onClick="window.location='equipo.jsp'"></td>
             <td colspan="13" align="center"><img src="Imagenes/save.jpg" alt="imagenes" width="32" height="33" />              <input name="btnguardar" type="submit" value="Guardar"></td>
