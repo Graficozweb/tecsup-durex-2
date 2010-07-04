@@ -31,7 +31,7 @@
     
     <tr>
         <td><div align="center">
-                    <input type="button" onclick="window.location='parte_equipo.jsp'"  name="partes" id="partes" value="                    Partes                    " />
+                    <input type="button" onclick="window.location='parte.jsp'"  name="partes" id="partes" value="                    Partes                    " />
 </div>
                </td>
 		
