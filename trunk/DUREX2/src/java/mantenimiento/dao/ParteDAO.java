@@ -27,7 +27,7 @@ public class ParteDAO extends BaseDAO {
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
 		try {
-			String query = "select * from partes where idequipo=?";
+			String query = "select * from partes where equipo_idequipo=?";
 			con = ConexionBD.obtenerConexion();
 			stmt = con.prepareStatement(query);
 			stmt.setInt(1, idEquipo_partes);
@@ -85,7 +85,7 @@ public class ParteDAO extends BaseDAO {
 	}
 
 	public Parte insertar(Parte vo) throws DAOExcepcion {
-		String query = "INSERT INTO partes(idequipo,nombre,descripcion) VALUES (?,?,?)";
+		String query = "INSERT INTO partes(equipo_idequipo,nombre,descripcion) VALUES (?,?,?)";
 		Connection con = null;
 		PreparedStatement stmt = null;
 		ResultSet rs = null;
