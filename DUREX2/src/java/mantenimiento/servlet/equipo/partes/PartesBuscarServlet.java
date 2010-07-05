@@ -53,7 +53,7 @@ public class PartesBuscarServlet extends javax.servlet.http.HttpServlet
 		Collection<Parte> lparte;
 		try {
 			lparte = dao.buscarPorNombre(request.getParameter("nombre"));
-                        System.out.println("size Collection<herramienta>: "+lparte.size());
+                        System.out.println("size Collection<parte>: "+lparte.size());
 			request.setAttribute("parte", lparte);
 			request.setAttribute("buscar", request.getParameter("nombre"));
 			System.out.println(request.getParameter("nombre"));
