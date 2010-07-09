@@ -19,7 +19,7 @@
     <table width="336" border="1">
         <tr>
             <td width="92">Categoria:</td>
-            <td width="228"><select name="categoria">
+            <td width="228"><select name="idequipo">
                     <option>-- Seleccione --</option>
                     <% EquipoDAO dao = new EquipoDAO();
                                 Collection<Equipo> lcateg = (ArrayList<Equipo>) dao.buscarPorNombre("");
@@ -40,7 +40,7 @@
         </tr>
         <tr>
             <td>Descripci&oacute;n:</td>
-            <td><textarea name="descripcion"></textarea></td>
+            <td><textarea name="descripcion" cols="45" rows="5"></textarea></td>
         </tr>
 
     </table>
